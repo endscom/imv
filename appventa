@@ -1,0 +1,100 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 23-01-2017 a las 22:01:57
+-- Versión del servidor: 10.1.13-MariaDB
+-- Versión de PHP: 5.6.23
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `appventa`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cuotaxproducto`
+--
+
+CREATE TABLE `cuotaxproducto` (
+  `CodVendedor` varchar(4) DEFAULT NULL,
+  `NombreVendedor` varchar(40) DEFAULT NULL,
+  `CodProducto` varchar(20) DEFAULT NULL,
+  `NombreProducto` varchar(254) DEFAULT NULL,
+  `FHGrabacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `metas`
+--
+
+CREATE TABLE `metas` (
+  `CodVendedor` varchar(4) DEFAULT NULL,
+  `NombreVendedor` varchar(40) DEFAULT NULL,
+  `CodCliente` varchar(20) DEFAULT NULL,
+  `NombreCliente` varchar(80) DEFAULT NULL,
+  `MontoVenta` decimal(28,4) DEFAULT NULL,
+  `NumItemFac` int(11) DEFAULT NULL,
+  `MontoXFac` decimal(28,4) DEFAULT NULL,
+  `PromItemXFac` int(11) DEFAULT NULL,
+  `Usuario` varchar(4) DEFAULT NULL,
+  `FHGrabacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `UsuarioID` int(10) NOT NULL,
+  `vendedor` varchar(5) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  `rol` int(5) NOT NULL,
+  `Activo` int(1) NOT NULL,
+  `FechaCreacion` date NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`UsuarioID`, `vendedor`, `Nombre`, `Password`, `rol`, `Activo`, `FechaCreacion`) VALUES
+(1, 'F02', 'ESPERANZA CASTILLO', 'EC1565', 0, 0, '0000-00-00'),
+(2, 'F03', 'ELIZABETH TREMINIO', 'ET0757', 0, 0, '0000-00-00'),
+(3, 'F04', 'MARVIN AGUIRRE', 'MA6917', 0, 0, '0000-00-00'),
+(4, 'F05', 'RONALD MARTINEZ', 'RM1107', 0, 0, '0000-00-00'),
+(5, 'F06', 'MARIA DE LOURDES PEREZ', 'ML5493', 0, 0, '0000-00-00'),
+(6, 'F07', 'BETSAYDA GARMENDIA', 'BG8429', 0, 0, '0000-00-00'),
+(7, 'F08', 'TANIA MARQUEZ', 'TM8041', 0, 0, '0000-00-00'),
+(8, 'F09', 'NEYLING RAMIREZ', 'NR8183', 0, 0, '0000-00-00'),
+(9, 'F10', 'WALTER BALTODANO', 'WB1406', 0, 0, '0000-00-00'),
+(10, 'F11', 'KENNY ARAGON', 'KA6238', 0, 0, '0000-00-00'),
+(11, 'F12', 'CESIA MOREIRA', 'CM5044', 0, 0, '0000-00-00'),
+(12, 'F14', 'ALMA IRIS RODRIGUEZ', 'AR5855', 0, 0, '0000-00-00'),
+(13, 'F17', 'ESPERANZA CASTILLO', 'EC0375', 0, 0, '0000-00-00'),
+(14, 'F18', 'GIOVANNA RODRIGUEZ PADILLA', 'GP2555', 0, 0, '0000-00-00'),
+(15, 'F19', 'SAMIR BARBERENA', 'SM4769', 0, 0, '0000-00-00'),
+(16, 'F20', 'FABIO CERVANTES', 'FC7102', 0, 0, '0000-00-00'),
+(17, 'F16', 'BISMARCK LOPEZ', 'BL3687', 0, 0, '0000-00-00'),
+(18, 'F21', 'VACANTE', 'VC655', 0, 0, '0000-00-00'),
+(19, '77', 'ALDER', '123', 1, 0, '0000-00-00'),
+(20, 'F13', 'AUXILIADORA MEJIA PAVON', 'AM8045', 0, 0, '0000-00-00');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
