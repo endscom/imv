@@ -6,22 +6,22 @@
 <div class="contenedor">        
     <div class="noMargen row TextColor center"><div class="col s12 m8 l12 offset-m1">CARGA DE DATOS</div></div>
     		<div class="Buscar row column noMargen">
-                <div class="input-field col s4 m4 l3 offset-l9">
+                <div class="input-field col s6 m4 l3 offset-s7 offset-m9 offset-l10">
 	            	<button href="#MFile" class="modal-trigger BtnBlue btn waves-effect waves-light" type="submit" name="action">SUBIR
 						<i class="material-icons left">cloud_upload</i>
 					</button>
 				</div>
             </div>            
             <div class="noMargen Buscar row column">
-                <div class="col s1 m1 l1 offset-l3 offset-s1 offset-m2">
+                <div class="col s1 m1 l1 offset-l3 offset-s2 offset-m3">
                     <i class="material-icons ColorS">search</i>
                 </div>
 
-                <div class="input-field col s5 m4 l4">
+                <div class="input-field col s6 m4 l4">
                     <input  id="searchDatos" type="text" placeholder="Buscar" class="validate">
                     <label for="searchDatos"></label>
                 </div>
-            </div>            
+            </div>
 
         <table id="tblDatos" class=" TblDatos">
             <thead>
@@ -117,6 +117,16 @@
             </div>
             <div class="row center">
                 <span id="titulM" class="Mcolor">DETALLE</span>
+            </div>
+            <div class="noMargen Buscar row column">
+                <div class="col s1 m1 l1 offset-l3 offset-s1 offset-m2">
+                    <i class="material-icons ColorS">search</i>
+                </div>
+
+                <div class="input-field col s5 m4 l4">
+                    <input  id="searchView" type="text" placeholder="Buscar" class="validate">
+                    <label for="searchView"></label>
+                </div>
             </div>
        <div class="row" id="view">
            

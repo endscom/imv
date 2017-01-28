@@ -37,37 +37,7 @@
             </tr>
             </thead>
             <tbody>
-                <?PHP
-                    if(!($Luser)){}
-                    else{
-                        foreach($Luser as $user )
-                        {
-                            $Mmensaje = "CAMBIAR A INACTIVO";
-                            $Micono="highlight_off";
-                            $MColor="#6a4ad5";
-                            $mIcono = "#ff0000";
-                            $activo='Activo';
-                            if($user['Estado']==1)
-                            {
-                                $activo='Inactivo';
-                                $MColor="#ff0000";
-                                $Micono="done_all";
-                                $Mmensaje = "CAMBIAR A ACTIVO";
-                                $mIcono = "#4caf50";
-                            }
-
-                            echo "
-                                 <tr>
-                                    <td>".date('d/m/Y',strtotime(substr($user['FechaCreacion'], 0,10)))."</td>
-                                    <td>".$user['IdUsuario']."</td>
-                                    <td class='negra'><a href='#' class=''>".$user['Nombre']."</td></a>
-                                    <td id='activo' style='color:".$MColor."'>".$activo."</td>
-                                    <td><a data-tooltip='$Mmensaje' class='btn-flat tooltipped' onclick='DellUsers(".'"'.$user['IdUsuario'].'",'.'"'.$user['Estado'].'"'.")'><i style='color:".$mIcono."' class=' material-icons'>$Micono</i></td></a>
-                                 </tr>
-                            ";
-                        }
-                    }
-                ?>
+                
             </tbody>
         </table>
     </div>
@@ -81,7 +51,7 @@
         <div class="btnCerrar right"><i style='color:red;' class="material-icons modal-action modal-close">highlight_off</i></div>
 
         <div class="row TextColor center">
-            AGREGAR USUARIO VISYS
+            AGREGAR USUARIO IMV
         </div>
         <div class="row">
             <form class="col s12"  method="post" name="formAddUser">

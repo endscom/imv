@@ -4,6 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Usuario_controller extends CI_Controller
 {
 
+    public function index() {
+
+        $this->load->view('header/header');
+        $this->load->view('pages/menu');
+        $this->load->view('pages/Users');
+        $this->load->view('footer/footer');
+        $this->load->view('jsview/js_usuarios');
+    }
     // AGREGAR USUARIO
     public function addUser()
     {

@@ -20,7 +20,7 @@ $route['Clientes'] = 'clientes_controller/Clientes';
 
 
 /*USUARIOS*/
-$route['Usuarios'] = 'vista_controller/Usuarios'; //cargar usuarios
+$route['Usuarios'] = 'usuario_controller'; //cargar usuarios
 /*USUARIOS*/
 
 // RUTA FACTURAS
@@ -52,6 +52,9 @@ $route['datos'] = 'datos_controller/index';
 $route['subirdatos'] = 'datos_controller/subir';
 $route['descartarDatos'] = 'datos_controller/descartarDatos';
 $route['viewDatos/(:any)/(:any)'] = 'datos_controller/viewDatos/$1/$2';
+
+/*RUTAS MONITOREO*/
+$route['monitoreo'] = 'monitoreo_controller/index';
 
 
 // RUTA IMPRESION

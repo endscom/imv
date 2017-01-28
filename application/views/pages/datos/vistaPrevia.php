@@ -4,14 +4,14 @@
 <!--  CONTENIDO PRINCIPAL -->
 <main class="mdl-layout__content mdl-color--grey-100">
 <div class="contenedor">        
-    <div class="noMargen row TextColor center"><div class="col s12 m8 l12 offset-m1">CONFIRME LOS DATOS Y PRESIONE ACEPTAR</div></div>
-    		<div class="Buscar row column">
-                <div class="input-field col s3 m3 l2 offset-l7">
+    <div class="noMargen row TextColor center"><div class="col s12 m8 l12 offset-m2">CONFIRME LOS DATOS Y PRESIONE ACEPTAR</div></div>
+    		<div class="row column">
+                <div class="input-field col s3 m3 l2 offset-l4 offset-m3 offset-s1">
                     <a href="datos" id="ACEP" class="BtnBlue btn waves-effect waves-light">ACEPTAR
                         <i class="material-icons left">done_all</i>
                     </a>
 				</div>
-                <div class="input-field col s3 m3 l3">
+                <div class="input-field col s3 m3 l3 offset-m1 offset-s2">
                     <a href="#modalEliminar" id="btnCargarBajas" class="modal-trigger BtnEliminar waves-effect btn">CANCELAR
                         <i class="material-icons left">delete_forever</i>
                     </a>

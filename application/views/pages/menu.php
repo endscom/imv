@@ -21,7 +21,7 @@
                 case '0':
                   $menu = '<a href="Main"><li href="Main"><i class="material-icons">home</i> inicio</li></a>
                            <a href="datos"><li href="datos"><i class="material-icons">backup</i> carga</li></a>
-                           <a href="usuarios"><li href="usuarios"><i class="material-icons">supervisor_account</i> usuarios</li></a>
+                           <a href="Usuarios"><li href="Usuarios"><i class="material-icons">supervisor_account</i> usuarios</li></a>
                            <a href="Reportes"><li href="Reportes"><i class="material-icons">description</i> reportes</li></a>
                            <a href="#modalOpciones" class="modal-trigger"><li href="#"><i class="material-icons">settings</i> opciones</li></a>
                            <a href="salir"> <li href="salir"><i class="material-icons">exit_to_app</i> cerrar sesión</li></a>';
@@ -30,7 +30,7 @@
                   $menu = '<a href="Main"><li href="Main"><i class="material-icons">home</i> inicio</li></a>
                            <a href="datos"><li href="datos"><i class="material-icons">backup</i> carga de datos</li></a>
                            <a href="monitoreo"><li href="monitoreo"><i class="material-icons">equalizer</i> monitoreo</li></a>
-                           <a href="usuarios"><li href="usuarios"><i class="material-icons">supervisor_account</i> usuarios</li></a>
+                           <a href="Usuarios"><li href="Usuarios"><i class="material-icons">supervisor_account</i> usuarios</li></a>
                            <a href="Reportes"><li href="Reportes"><i class="material-icons">description</i> reportes</li></a>
                            <a href="#modalOpciones" class="modal-trigger"><li href="#"><i class="material-icons">settings</i> opciones</li></a>
                            <a href="salir"> <li href="salir"><i class="material-icons">exit_to_app</i> cerrar sesión</li></a>';

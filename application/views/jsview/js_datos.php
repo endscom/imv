@@ -1,10 +1,13 @@
 <script>
 	$(document).ready(function() {
-		//$('#MFile').openModal();
 	$('#searchDatos').on( 'keyup', function () {
 		var table = $('#tblDatos').DataTable();
 		table.search(this.value).draw();
 	});
+    $('#searchView').on( 'keyup', function () {
+        var table = $('#tblDetalleReportes').DataTable();
+        table.search(this.value).draw();
+    });    
 		$('#tblDatos,#tblmetas,#tblcuotas').DataTable({
             "scrollCollapse": true,
             //"paging":         false,

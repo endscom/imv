@@ -319,7 +319,7 @@ _:-ms-input-placeholder, :root .demo-graph {
     margin-top: 35px;
 }
 #contenedorL{
-    background-color: #6f6f6f;
+    background-color: #263369;
     /*background: url('/VISYS2/assets/img/fondo_login.jpg');*/
 }
 #nombre{
@@ -359,11 +359,18 @@ _:-ms-input-placeholder, :root .demo-graph {
     text-align: center;
 }
 #Acceder{
-    border: 1px solid #fff;
+    border: 1px solid #3f3e3e;
+    background: white;
+    color: #263369;
     margin-top: 20px;
     font-family: 'robotoblack';
     font-size: 14px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+#Acceder:hover{
+  transition: background-color 0.5s ease;
+  background-color: #9fa6c2;
 }
 #logos{
     margin-left: -15%;
@@ -385,17 +392,12 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 }
 #menu{
-    background: #1F0A71;
     font-family: 'robotoblack';
     font-weight: 500;
-
 }
 .contenedor{
     margin: 20px;
     width: auto;
-}
-#MenuFondo{
-    /*background: url('/VISYS2/assets/img/fondo_user.jpg');*/
 }
 #imgUser{
     margin-left: 18%;
@@ -418,7 +420,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 }
 .ColorHeader{
-    background: #1F0A71;
+    background: #263369;
     color: #fff;
     margin-top: 20px;
     text-align: center;
@@ -586,34 +588,32 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .BtnEliminar
 {
-    border-radius: 40px;
-    background: #ff0000;
+    border-radius: 4px;
+    background: #263369;
     font-family: 'robotoregular';
     font-weight: 500;
     font-size: 13px;
     margin-right: 25px;
 }
-
 .BtnEliminar:hover
 {
-   background:rgba(255, 0, 0, 0.6);
-    transition: 0.5s;
+  background: #2788A5;
+  transition: 0.5s;
+  color: white;
 }
 .BtnBlue
 {
-    border-radius: 40px;
-    background: #6a4ad5;
+    border-radius: 4px;
+    background: #263369;
     font-family: 'robotomedium';
     font-weight: 500;
     font-size: 12px;
-    /*margin-right: 25px;*/
     transition: 0.5s;
 }
 .BtnBlue:hover
 {
-    background: #402C82;
-    color: #fff;
-   
+    background: #2788A5;
+    color: #fff;   
 }
 .TextTotal{
     margin-top: 20px;
@@ -626,21 +626,17 @@ _:-ms-input-placeholder, :root .demo-graph {
     font-family: 'robotoblack';
     font-size: 13px;
 }
-
 .text{
     font-family: 'robotoblack';
     font-size: 17px;
     color: #1F0A71;
 }
-
 .TblDatos{
     border-collapse: separate;
     border-spacing: 1px;
 }
-
 .TblDatos th{
-
-    background: #1F0A71;
+    background: #3f5aa5;
     color: #fff;
     font-size: 14px;
     font-family: 'robotobold';
@@ -1201,8 +1197,8 @@ li img{
   font-size:12px;
 }
 .redondo{
-    border-radius: 20px;
-      background-color: #1F0A71;
+    border-radius: 4px;
+    background-color: #263369;
 }
 #modalIMG{
   width: 30%;

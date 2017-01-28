@@ -94,9 +94,9 @@ class datos_model extends CI_Model
                     $json['data'][$i]['NombreVendedor'] = $key['NombreVendedor'];
                     $json['data'][$i]['CodCliente'] = $key['CodCliente'];
                     $json['data'][$i]['NombreCliente'] = $key['NombreCliente'];
-                    $json['data'][$i]['MontoVenta'] = $key['MontoVenta'];
+                    $json['data'][$i]['MontoVenta'] = number_format($key['MontoVenta'],0);
                     $json['data'][$i]['NumItemFac'] = $key['NumItemFac'];
-                    $json['data'][$i]['MontoXFac'] = $key['MontoXFac'];
+                    $json['data'][$i]['MontoXFac'] = number_format($key['MontoXFac'],0);
                     $json['data'][$i]['PromItemXFac'] = $key['PromItemXFac'];
                     $i++;
                 }    
